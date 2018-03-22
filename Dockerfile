@@ -1,9 +1,3 @@
-# baseimage version.
-ARG UBUNTU_BASEIMAGE_VERSION=latest
-# ARG UBUNTU_BASEIMAGE_VERSION=v0.10.0
-
-# FROM phusion/baseimage:${UBUNTU_BASEIMAGE_VERSION}
-FROM tensorflow/tensorflow
 FROM python:2.7-slim
 MAINTAINER Sameer Mahabole <sameer.mahabole@gmail.com>
 
@@ -28,6 +22,11 @@ RUN apt-get update && yes | apt-get upgrade
 # Latter is for ft2build.
 # RUN set -e; apt-get install --yes libfreetype6-dev vflib3-dev pkg-config
 RUN set -e; apt-get install --yes python-matplotlib
+# RUN set -e; apt-get install --yes python-pandas
+RUN set -e; python -m pip install pandas==0.21.0 --force-reinstall --upgrade \
+--no-deps --no-cache --find-links \
+https://3f23b170c54c2533c070-1c8a9b3114517dc5fe17b7c3f8c63a43.ssl.cf2.rackcdn.com/ \
+--no-index
 
 
 # RUN set -e; \
