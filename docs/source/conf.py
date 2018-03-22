@@ -50,8 +50,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Deep Summarization'
-copyright = u'2017, Harshal Priyadarshi'
-author = u'Harshal Priyadarshi'
+copyright = u'2017, Sameer Mahabole'
+author = u'Sameer Mahabole'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -226,7 +226,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   (master_doc, 'DeepSummarization.tex', u'Deep Summarization Documentation',
-   u'Harshal Priyadarshi', 'manual'),
+   u'Sameer Mahabole', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
