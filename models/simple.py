@@ -301,7 +301,7 @@ class Simple(NeuralNet):
     def _predict_batch(self, review):
         """
         Predict test reviews in batches
-        
+
         :param review: Input review batch
         :return: None
         """
