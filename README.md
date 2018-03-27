@@ -2,15 +2,10 @@
 It uses Recurrent Neural Network (LSTM and GRU units) for developing Seq2Seq Encoder Decoded model (with and without attention mechanism) for summarization of amazon food reviews into abstractive tips (public domain dataset).
 
 ## Contents
-- [Encoder Decoder Model](#encoder-decoder-model)
 - [DataSet](#dataset)
-- [Installation Requirements](#installation-requirements)
-- [Run Instructions](#run-instructions)
 - [Documentation](#documentation)
 - [References](#references)
 
-## Encoder Decoder Model
-![Model](/assets/encoderdecoder.png)
 
 ## DataSet
 - **DataSet Information** - This dataset consists of reviews of fine foods from amazon. The data span a period of more than 10 years, including all ~500,000 reviews up to October 2012. Reviews include product and user information, ratings, and a plaintext review.
