@@ -1,5 +1,5 @@
 # Deep Summarization
-Uses Recurrent Neural Network (LSTM and GRU units) for developing Seq2Seq Encoder Decoded model with and without attention mechanism for summarization of amazon food reviews into abstractive tips.
+It uses Recurrent Neural Network (LSTM and GRU units) for developing Seq2Seq Encoder Decoded model (with and without attention mechanism) for summarization of amazon food reviews into abstractive tips (public domain dataset).
 
 ## Contents
 - [Encoder Decoder Model](#encoder-decoder-model)
@@ -35,82 +35,9 @@ product better than most.
 The input review has key `review/text` and the target summary that we wish to generate has key `review/summary`. For the purpose of this project, all other fields are ignored and the following two fields are extracted by the extracter script provided.
 
 
-## Installation Requirements
-1) Create a barebone virtual environment and activate it
-```
-virtualenv deepsum --no-site-packages
-source deepsum/bin/activate
-```
-
-2) Install the project requirements
-```
-pip install -r requirements.txt
-```
-
-## Run Instructions
-
-1) Extract the reviews and target tips using the following command
-```
-python extracter_script.py raw_data/finefoods.txt extracted_data/review_summary.csv
-```
-NOTE: Don't forget extracting the dataset and keeping it in the raw_data directory before running the above command.
-
-2) Then run the seed script to create the required permuted training and testing dataset and also train and evaluate the model
-```
-# Simple - No Attention
-python train_scripts/train_script_gru_simple_no_attn.py
-```
-This runs the Simple GRU Cell Based (Without Attention Mechanism) Encoder Decoder model.
-
-3) Once the above script has completed execution run one of the following scripts in whichever order desired.
-
-- For Models without Attention Mechanism
-
-```
-# Simple - No Attention
-python train_scripts/train_script_lstm_simple_no_attn.py
-
-# Stacked Simple - No Attention
-python train_scripts/train_script_gru_stacked_simple_no_attn.py
-python train_scripts/train_script_lstm_stacked_simple_no_attention.py
-
-# Bidirectional - No Attention
-python train_scripts/train_script_gru_bidirectional_no_attn.py
-python train_scripts/train_script_lstm_bidirectional_no_attn.py
-
-# Stacked Bidirectional - No Attention
-python train_scripts/train_script_gru_stacked_bidirectional_no_attn.py
-python train_scripts/train_script_lstm_stacked_bidirectional_no_attention.py
-
-```
-
-- For Models with Attention Mechanism
-
-```
-# Simple - Attention
-python train_scripts/train_script_gru_simple_attn.py
-python train_scripts/train_script_lstm_simple_attn.py
-
-# Stacked Simple - Attention
-python train_scripts/train_script_gru_stacked_simple_attn.py
-python train_scripts/train_script_lstm_stacked_simple_attention.py
-
-# Bidirectional - Attention
-python train_scripts/train_script_gru_bidirectional_attn.py
-python train_scripts/train_script_lstm_bidirectional_attn.py
-
-# Stacked Bidirectional - Attention
-python train_scripts/train_script_gru_stacked_bidirectional_attn.py
-python train_scripts/train_script_lstm_stacked_bidirectional_attention.py
-```
-
-4) Finally exit the virtual environment once you have completed the project. You can reactivate the env later.
-```
-deactivate
-```
 
 ## Documentation
-The documentation was created automatically, and thus can be error prone. Please report any in the issue table. Some methods have missing documentation. This is not an error, but laziness on my part. I will add those documentations, when I get some free time.
+The documentation was created automatically, and thus can be error prone. Please report any in the issue table. Some methods have missing documentation. This is not an error, but probably of lesser priority. It will be added soon.
 
 To access documentation, just open index.html located at
 ```
