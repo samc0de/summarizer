@@ -1,4 +1,4 @@
-# Deep Summarization
+# Text Summarization using deep neural networks
 It uses Recurrent Neural Network (LSTM and GRU units) for developing Seq2Seq Encoder Decoded model (with and without attention mechanism) for summarization of amazon food reviews into abstractive tips (public domain dataset).
 
 ## Contents
@@ -37,13 +37,18 @@ The input review has key `review/text` and the target summary that we wish to ge
 
 
 ## Documentation
-The documentation was created automatically, and thus can be error prone. Please report any in the issue table. Some methods have missing documentation. This is not an error, but probably of lesser priority. It will be added soon.
 
-To access documentation, just open index.html located at
 ```
 docs/build/html/index.html
 ```
+
+The documentation was created automatically, and thus can be error prone. Please report any in the issue table. Some methods have missing documentation. This is not an error, but probably of lesser priority. It will be added soon.
+
+To access documentation, just open index.html located at
+
 on your favorite browser. You can open them locally for now. I will try hosting them on Github pages once i get time. 
+
+
 ## References
 1) J. McAuley and J. Leskovec. From amateurs to connoisseurs: modeling the evolution of user expertise through online reviews. WWW, 2013.
 
