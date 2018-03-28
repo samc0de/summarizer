@@ -33,15 +33,16 @@ The input review has key `review/text` and the target summary that we wish to ge
 
 ## Documentation
 
-```
-docs/build/html/index.html
-```
-
 The documentation was created automatically, and thus can be error prone. Please report any in the issue table. Some methods have missing documentation. This is not an error, but probably of lesser priority. It will be added soon.
 
 To access documentation, just open index.html located at
 
-on your favorite browser. You can open them locally for now. I will try hosting them on Github pages once i get time. 
+```
+docs/build/html/index.html
+```
+
+on your favorite browser. You can open them locally for now. I will try hosting them on Github pages once i get time.
+
 
 
 ## References

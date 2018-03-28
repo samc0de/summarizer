@@ -17,7 +17,7 @@ class Bleu:
 
         :param n:
         """
-        # default compute Blue score up to 4 - grams 
+        # default compute Blue score up to 4 - grams
         self._n = n
         self._hypo_for_image = {}
         self.ref_for_image = {}

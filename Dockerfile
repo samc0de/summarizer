@@ -16,6 +16,13 @@ RUN apt-get update && yes | apt-get upgrade
 RUN set -e; apt-get install --yes libfreetype6-dev vflib3-dev pkg-config
 RUN set -e; apt-get install --yes python-matplotlib python-pandas python-pip
 
+# For development and debugging.
+RUN set -e; \
+        apt-get install --yes\
+                vim \
+                git \
+        ;
+
 # Fix old pip.
 RUN pip install --upgrade pip
 

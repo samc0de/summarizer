@@ -369,7 +369,7 @@ class StackedBidirectional(NeuralNet):
     def _predict_batch(self, review_fwd, review_bwd):
         """
         Predict test reviews in batches
-        
+
         :param review_fwd: Input review batch for forward propagation model
         :param review_bwd: Input review batch for backward propagation model
         :return: None

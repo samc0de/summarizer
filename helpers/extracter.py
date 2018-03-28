@@ -68,7 +68,7 @@ class Spider:
     def save_review_summary_frame(self, output_file):
         """
         save (review, summary) pair in CSV file
-        
+
         :param output_file: The location where CSV file is to be saved.
         :return: None
         """

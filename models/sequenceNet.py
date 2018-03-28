@@ -143,7 +143,7 @@ class NeuralNet(object):
     def store_test_predictions(self, prediction_id='_final'):
         """
         Stores the test predictions in a CSV file
-        
+
         :param prediction_id: A simple id appended to the name of the summary for uniqueness
         :return: None
         """

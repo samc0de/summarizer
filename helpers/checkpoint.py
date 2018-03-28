@@ -97,7 +97,7 @@ class Checkpointer:
         """
         Deletes all previous checkpoints that are <num_previous> before the present checkpoint.
         This is done to prevent blowing out of memory due to too many checkpoints
-        
+
         :param num_previous:
         :return:
         """
