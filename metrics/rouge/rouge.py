@@ -81,7 +81,7 @@ class Rouge:
         """
         Computes Rouge-L score given a set of reference and candidate sentences for the dataset
         Invoked by evaluate_captions.py
-        
+
         :param hypo_for_image: dict : candidate / test sentences with "image name" key and "tokenized sentences" as values
         :param ref_for_image: dict : reference MS-COCO sentences with "image name" key and "tokenized sentences" as values
         :returns: average_score: float (mean ROUGE-L score computed by averaging scores for all the images)

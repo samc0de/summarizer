@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# 
+#
 # File Name : ptbtokenizer.py
 #
 # Description : Do the PTB Tokenization and remove punctuations.

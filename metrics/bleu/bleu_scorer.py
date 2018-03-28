@@ -232,7 +232,7 @@ class BleuScorer(object):
     def __iadd__(self, other):
         """
         add an instance (e.g., from another sentence).
-        
+
         :param other:
         :return:
         """

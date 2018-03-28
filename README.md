@@ -116,7 +116,7 @@ To access documentation, just open index.html located at
 ```
 docs/build/html/index.html
 ```
-on your favorite browser. You can open them locally for now. I will try hosting them on Github pages once i get time. 
+on your favorite browser. You can open them locally for now. I will try hosting them on Github pages once i get time.
 ## References
 1) J. McAuley and J. Leskovec. From amateurs to connoisseurs: modeling the evolution of user expertise through online reviews. WWW, 2013.
 
